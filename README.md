@@ -1,15 +1,28 @@
 # AI Sales Platform Backend
 
-Backend service for AI Sales Automation SaaS.
+Backend service for my AI Sales Automation SaaS.
 
-- FastAPI-based API
-- LLM integration
-- Future: RAG, agent orchestration, workflow engine
+## Tech Stack
+
+- Python 3.10+
+- FastAPI (for API)
+- pytest (for tests)
+- Virtualenv for isolation
 
 ## Setup
 
 ```bash
+# Clone repository
+git clone https://github.com/<your-username>/ai-sales-platform-backend.git
+cd ai-sales-platform-backend
+
+# Create & activate virtual env (Windows)
 python -m venv .venv
-source .venv/bin/activate  # or .\.venv\Scripts\Activate.ps1 on Windows
+.\.venv\Scripts\Activate.ps1
+
+# Install dependencies
 pip install -r requirements.txt
-cp .env.example .env
+
+# Create env file
+copy .env.example .env
+# then edit .env with your real API keys
